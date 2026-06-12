@@ -1,5 +1,6 @@
 name: Test Project
-on: push
+# triggering the same workflow using multiple different events
+on: [push, workflow_dispatch]
 jobs:
   test:
     runs-on: ubuntu-latest
